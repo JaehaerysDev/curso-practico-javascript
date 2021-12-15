@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./geometry.css">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Taller del curso práctico de JavaScript</p>        
+    </header>
+
+    <div class="container">
+        <img src="./img/geometry.png" alt="figuras">
+        <section class="cuadrado">
+            <h2>Calcula el perímetro y el área de un cuadrado</h2>
+            <form action="">
+                <label for="input-cuadrado">Longitud de los lados</label>
+                <input id="input-cuadrado" type="number">
+                <button type="button" onclick="userSquarePerimeter()">Calcular perímetro</button>
+                <button type="button" onclick="userSquareArea()">Calcular área</button>
+            </form>
+        </section>
+        <section class="triangulo">
+            <h2>Calcula el perímetro y el área de un triángulo</h2>
+            <form action="">
+                <label for="input-lado">Longitud de los lados</label>
+                <input id="input-lado" type="number">
+                <label for="input-base">Longitud de los la base</label>
+                <input id="input-base" type="number">
+                <button type="button" onclick="userTrianglePerimeter()">Calcular perímetro</button>
+                <button type="button" onclick="userTriangleArea()">Calcular área</button>
+            </form>
+        </section>
+        <section class="circulo">
+            <h2>Calcula el perímetro y el área de un círculo</h2>
+            <form action="">
+                <label for="input-radio">Longitud del radio</label>
+                <input id="input-radio" type="number">
+                <button type="button" onclick="userCirclePerimeter()">Calcular perímetro</button>
+                <button type="button" onclick="userCircleArea()">Calcular área</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="geometry.js"></script>
+    
+</body>
+</html>
